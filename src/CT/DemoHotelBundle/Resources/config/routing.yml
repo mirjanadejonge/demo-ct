@@ -1,3 +1,5 @@
-CTDemoHotelBundle_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: CTDemoHotelBundle:Default:index }
+
+
+CTDemoHotelBundle_searchHotel:
+    pattern: /search
+    defaults: {_controller: CTDemoHotelBundle:Hotel:search}

@@ -1,0 +1,12 @@
+
+
+<form name="searchHotel" method="post">
+<select name="hotel">
+{% for hotel in hotels %}
+    <option value="{{ hotel.id }}">{{ hotel.name }}, {{ hotel.city }}</option>
+{% else %}
+    <option value="-1">Geen hotel gevonden</option>
+{% endfor %}
+</select>
+<input value="Kies hotel" type="submit"/>
+</form>
